@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1 style="text-align:center;"> Job Tracker Web App</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Tracker Web App </title>
+        <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+<header>
+    <h1>Job Tracker</h1>
+    <p>keep track of all your applications in one place</p>
+</header>
+<main class="container">
+    <section id="Job-Form">
+    <h2> Add New Application</h2>
+    <form>
+        <input type="text"
+        name="company" placeholder="Company Name" required />
+        <input type="text"
+        name="role" placeholder="Role Title" required />
+        <select name="status">
+        <option value="applied"> Applied </option>
+        <option value="interview"> Interview </option> 
+        <option value="offer"> Offer </option>
+        <option value="rejected"> Rejected </option>
+    </select> 
+    <input type="url" name="link" placeholder="job-Link (optional)"/>
+    <textarea name="notes" placeholder=" Notes"> </textarea> 
+    <button type="submit"> Add Job </button>
+ </form>
+</section>
+<section id="job-list">
+    <h2>Your Application</h2>
+
+    <ul id="jobList"></ul>
+    
+</section>
+</main>
+<!-- footer -->
+ <footer>
+    <p> Built by Muskan | Powered by HTML,CSS & JS </p>
+ </footer>
+ </div>
+ <!-- link to your js -->
+  <script src="app.js"></script>
+    </body>
+</html>
